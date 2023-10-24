@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --height: 450px;
+  --width: 450px;
+}
+main {
+  background-image: radial-gradient(#e85237, 20%, #f4bf42);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+.container {
+  min-height: var(--height);
+  width: var(--width);
+  position: relative;
+}
+section {
+  min-height: 450px;
+  width: 450px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2rem);
+  padding: 3rem;
+}
+.circle1,
+.circle2 {
+  background: rgba(255, 255, 255, 0.4);
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  border-radius: 50%;
+}
+.circle1 {
+  top: -70px;
+  right: -70px;
+}
+.circle2 {
+  bottom: -70px;
+  left: -70px;
+}
+.titel {
+  width: 100%;
+}
+.titel h1 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+  position: relative;
+}
+.titel h1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100px;
+  height: 4px;
+  background-color: #fff;
+}
+form {
+  padding: 1px;
+}
+form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+form .input-box input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.9);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+form .input-box input:hover {
+  transform: scale(1.2);
+  transition: 0.4s;
+  border: 1px solid #f5dca8;
+  background: transparent;
+  color: white;
+}
+form .input-box input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+form .input-box input[type="submit"] {
+  background: rgba(255, 255, 255, 0.6);
+  font-weight: 700;
+  color: #d2970f;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+form .link-text {
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 15px;
+  font-size: 0.85rem;
+}
+form .link-text a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+}
+.image {
+  position: absolute;
+  width: 100%;
+  height: 85%;
+  bottom: 5%;
+  right: 100%;
+  text-align: left;
+}
+.image img {
+  height: 100%;
+}
+.image-2 {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  bottom: 10%;
+  left: 100%;
+  text-align: right;
+}
+.image-2 img {
+  height: 100%;
+}
